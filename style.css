@@ -28,15 +28,20 @@ section article img {
 }
 
 section article p  {
-  width: 40%;
+  width: 45%;
   display: inline-block;
 }
 
 button {
-  font-size: 30px;
+  font-size: 20px;
    border: 10px solid orange;
    border-radius: 15px;
-   padding: 0 120px;
+   padding: 0 50px;
    display: block;
+   color: red;
    background-color: orange;
+   display: inline-block;
+}
+.hide{
+    visibility: hidden;
 }
