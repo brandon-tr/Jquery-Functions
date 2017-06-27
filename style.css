@@ -28,19 +28,24 @@ section article img {
 }
 
 section article p  {
-  width: 45%;
+  width: 40%;
   display: inline-block;
 }
 
 button {
-  font-size: 20px;
+  font-size: 30px;
    border: 10px solid orange;
    border-radius: 15px;
-   padding: 0 50px;
+   padding: 0 120px;
    display: block;
    background-color: orange;
-   display: inline-block;
 }
-.hide{
-    visibility: hidden;
+
+.green{
+    color: green;
+}
+
+ important {
+    color: blue;
+    font-size: 100px;
 }
