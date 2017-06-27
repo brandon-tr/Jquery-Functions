@@ -7,30 +7,49 @@
     <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type="text/javascript">
       $(document).ready(function(){
-          $('ul li').addClass('green');
-          $('p').before('This is in Latin...');
-          $('img').after('broccoli house');
-          $('ul li').append('|||');
-          var title = $( "important" ).attr( "title" );
-          $( "input" ).keyup(function() {
-            var value = $(this).val();
-            $( "h4" ).text(value);
+        $("#one").click(function(){
+          $('article img').removeClass('hide');
+        });
+
+        $("#two").click(function(){
+          $('article img').addClass('hide');
+        });
+
+        $("#three").click(function(){
+          $("p").fadeIn("slow");
+        });
+
+         $("#seven").click(function(){
+            $("p").fadeOut("slow");
           });
-          $('span').text('sike, this is in english now');
-          $('div').data('test', {first: 6});
-          $( "strong:first" ).text($( "div" ).data( "test" ).first);
+
+        $('#four').click(function(){
+          $('p').slideUp("slow");
+        });
+
+        $("#five").click(function(){
+          $("p").slideDown("slow");
+        });
+
+        $("#six").click(function(){
+          $("p").slideToggle("slow");
+        });
+
+        $("#eight").click(function(){
+          $("p").html("Test <b> TEst");
+        });
       });
     </script>
   </head>
   <body>
     <header>
-      <h1><important title='big header'>Website</important></h1>
+      <h1>Website</h1>
       <img src="http://bit.ly/2tgCoNZ" alt="">
       <nav>
         <ul>
           <li>Home</li>
           <li>Go</li>
-          <li>Stop</li><div><strong></strong></div>
+          <li>Stop</li>
         </ul>
       </nav>
     </header>
@@ -41,10 +60,15 @@
         <img src="http://bit.ly/2tgCoNZ" alt="">
         <img src="http://bit.ly/2tgCoNZ" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-        <input type="text" value="enter text here">
-        <h4></h4>
-        <button type="button" name="button">Button</button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <button type="button" name="button" id="one">Show</button>
+        <button type="button" name="button" id="two">Hide</button>
+        <button type="button" name="button" id="three">Fade in</button>
+        <button type="button" name="button" id="seven">Fade out</button>
+        <button type="button" name="button" id="four">Slide Up</button>
+        <button type="button" name="button" id="five">Slide Down</button>
+        <button type="button" name="button" id="six">Slide Toggle</button>
+        <button type="button" name="button" id="eight">HTML</button>
       </article>
     </section>
   </body>
