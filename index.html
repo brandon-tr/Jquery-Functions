@@ -8,7 +8,7 @@
     <script type="text/javascript">
       $(document).ready(function(){
         $("#one").click(function(){
-          alert('test');
+          $('article img').removeClass('hide');
         });
 
         $("#two").click(function(){
@@ -16,9 +16,28 @@
         });
 
         $("#three").click(function(){
-          alert('test');
+          $("p").fadeIn("slow");
         });
 
+         $("#seven").click(function(){
+            $("p").fadeOut("slow");
+          });
+
+        $('#four').click(function(){
+          $('p').slideUp("slow");
+        });
+
+        $("#five").click(function(){
+          $("p").slideDown("slow");
+        });
+
+        $("#six").click(function(){
+          $("p").slideToggle("slow");
+        });
+
+        $("#eight").click(function(){
+          $("p").html("Test <b> TEst");
+        });
       });
     </script>
   </head>
@@ -44,7 +63,12 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <button type="button" name="button" id="one">Show</button>
         <button type="button" name="button" id="two">Hide</button>
-        <button type="button" name="button" id="three">Alert</button>
+        <button type="button" name="button" id="three">Fade in</button>
+        <button type="button" name="button" id="seven">Fade out</button>
+        <button type="button" name="button" id="four">Slide Up</button>
+        <button type="button" name="button" id="five">Slide Down</button>
+        <button type="button" name="button" id="six">Slide Toggle</button>
+        <button type="button" name="button" id="eight">HTML</button>
       </article>
     </section>
   </body>
